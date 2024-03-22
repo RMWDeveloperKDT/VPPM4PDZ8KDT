@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pop-up Box</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: rgb(208, 26, 141);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .message {
+      display: none;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" onclick="showMessage()">
+    <span id="initialText">Baby Shark🦈</span>
+    <span id="messageText" class="message">I Love You so much Baby🥰😘</span>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('initialText').style.display = 'none';
+      document.getElementById('messageText').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
